@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link href="css\mystyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!--He puesto una imagen oscura como fondo y en CSS, he creado una clase llamada .wrapper para añadirla a los elementos contenedores y poder centrarlos más fácilmente. En el header he creado un contenedor donde hay otros dos, el logo y el subtitle, y otro más, que contiene los elementos del nav, cada uno lleva a una página diferente localizada en la misma carpeta.-->
+
+<body background="imatges/fondo.jpg">
+<header class="wrapper">
+	<div class="wrapper">
+		<div class="logo">
+			JJB
+		</div>
+		<div class="subtitle">
+			Juan José Bonnín
+		</div>
+		<nav>
+			<a href="about.html">About</a>
+			<a href="experience.html">Experience</a>
+			<a href="work.html">Work</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</div>
+</header>
+
+<!--Esta es la parte de contacto.-->
+<!--He utilizado la clase wrapper para ayudarme a centrar mejor los elementos y he creado dos elementos, uno para la parte del mapa y la dirección y otro para el formulario y está uno al lado del otro.-->
+
+	<section class="wrapper seccion" >
+		<div class="wrapper tituloseccion">
+			Contáctame
+		</div>
+	</section>
+
+<!--Para hacer la web responsive, he hecho que cuando la página se haga pequeña (para móviles básicamente), el elemento de la derecha (el formulario) se mueva hacia abajo y el mapa se quede arriba, dividiendolos ya que si los dejaba juntos se vería bastante mal.-->
+
+	<section class="wrapper">
+		<div class="wrapper" id="mapa">
+			<div class="cabecera">Encuéntrame</div>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.3303262252657!2d1.4075327155968915!3d38.89356085477484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1299442a3cc1ac47%3A0x41e100120c62171f!2sCarrer%20de%20Fray%20Luis%20de%20Leon%2C%2007800%20Eivissa%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1574260562074!5m2!1ses!2ses" frameborder="0"></iframe>
+			</div>
+			<div id="direccion">
+				<p class="dir">MI DIRECCIÓN</p>
+				<p class="dir">Calle: Fray Luís de León Apt. Tauro 3º 6ª</p>
+				<p class="dir">Teléfono: 678985979</p>
+				<p class="dir">Gmail: iavilesruiz@alumnat.iessacolomina.es</p>
+			</div>
+		</div>
+		<div class="wrapper" id="formulario">
+			<div id="messageme">
+				<div class="titulo cabecera" id="messageme">
+				Envíame un mensaje
+				</div>
+				<div id="info">
+					<div class="wrapper label">
+						<label class="cosas">
+							Nombre
+						</label>
+						<input type="text" name="Name" placeholder="Nombre">
+					</div>
+					<div class="wrapper label">
+						<label class="cosas">
+							Email
+						</label>
+						<input type="email" name="Email" placeholder="Email">
+					</div>
+					<div class="wrapper label">
+						<label class="cosas">
+							Fecha de nacimiento
+						</label>
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+							<option>13</option>
+							<option>14</option>
+							<option>15</option>
+							<option>16</option>
+							<option>17</option>
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+							<option>31</option>
+						</select>
+						<select>
+							<option>Enero</option>
+							<option>Febrero</option>
+							<option>Marzo</option>
+							<option>Abril</option>
+							<option>Mayo</option>
+							<option>Junio</option>
+							<option>Julio</option>
+							<option>Agosto</option>
+							<option>Septiembre</option>
+							<option>Octubre</option>
+							<option>Noviembre</option>
+							<option>Diciembre</option>
+						</select>
+					</div>
+					<div class="wrapper label">
+						<label class="cosas">
+							Sexo
+						</label>
+						<input type="radio" name="Sexo">Hombre
+						<input type="radio" name="Sexo">Mujer
+					</div>
+					<div class="wrapper label">
+						<label class="cosas">
+							Skills
+						</label>
+						<input type="checkbox" name="skill">Programador
+						<input type="checkbox" name="skill">Pintor
+						<input type="checkbox" name="skill">Gamer
+						<input type="checkbox" name="skill">Escritor
+					</div>
+					<div class="wrapper label">
+						<label class="cosas">
+							Mensaje
+						</label>
+						<textarea></textarea>
+					</div>
+					<div class="wrapper label">
+						<a href="Contact.html">
+							<button>
+								Reset
+							</button>
+						</a>
+						<button>
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--También añadí en el footer mi nombre y el Copyright, utilizando un span porque una parte del texto (©) es un enlace y el resto del texto no lo es, pero quiero que esté en la misma línea.-->
+
+<footer class="wrapper">
+	<a href="https://copyright.es/"> © </a><span>Juan José Bonnín Sansó 2019 - 2020</span> 
+</footer>
+
+
+</body>

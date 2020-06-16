@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Work</title>
+	<link href="css\mystyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!--He puesto una imagen oscura como fondo y en CSS, he creado una clase llamada .wrapper para añadirla a los elementos contenedores y poder centrarlos más fácilmente. En el header he creado un contenedor donde hay otros dos, el logo y el subtitle, y otro más, que contiene los elementos del nav, cada uno lleva a una página diferente localizada en la misma carpeta.-->
+
+<body background="imatges/fondo.jpg">
+<header class="wrapper">
+	<div class="wrapper">
+		<div class="logo">
+			JJB
+		</div>
+		<div class="subtitle">
+			Juan José Bonnín
+		</div>
+		<nav>
+			<a href="about.html">About</a>
+			<a href="experience.html">Experience</a>
+			<a href="work.html">Work</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</div>
+</header>
+
+<!--Esta es la parte de experiencia.-->
+<!--He utilizado la clase wrapper para ayudarme a centrar mejor los elementos.-->
+
+	<section class="wrapper seccion" >
+		<div class="wrapper tituloseccion">
+			Experiencia
+		</div>
+	</section>
+
+<!--He creado una tabla de una fila y tres columnas para que los tres elementos que quiero mostrar lo hagan en columnas y utilizando las clases en las imágenes y los textos he hecho que cambie la isposición de los elementos en una pantalla más pequeña.-->
+
+	<section class="wrapper">
+		<table>
+			<tr>
+				<td>
+					<div class="wrapper">
+						<div class="cabecera2">RPG Maker</div>
+						<div class="imgcentro">
+							<img class="vlogo" src="imatges/rpg.png">
+						</div>
+						<div class="motor">
+							Empecé con RPG Maker, un editor de videojuegos en 2D bastante básico, aunque bastante complicado para la edad a la que empecé. Gracias a este programa aprendí cosas básicas de programación que más tarde me han ayudado a entender bastante rápido este tema. Con este programa llegué a hacer medio videojuego de mi propia versión de Pokémon, ambientado en España.
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="wrapper">
+						<div class="cabecera2">Unity</div>
+							<div class="imgcentro">
+								<img class="vlogo" src="imatges/unity.png">
+							</div>
+							<div class="motor">
+								Unity es otro motor de videojuegos, pero este es en 3D. Este motor es obviamente más complicado pero aún así es de los más usados y simples en el mundo 3D. Sólo he hecho un par de pruebas con este pero sin duda en un futuro aprenderé a dominarlo.
+							</div>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="wrapper">
+						<div class="cabecera2">Unreal Engine</div>
+							<div class="imgcentro">
+								<img class="vlogo" src="imatges/unreal.png">
+							</div>
+							<div class="motor">
+								Este motor es bastante más complicado pero aún así llegué a hacer un proyecto bastante pequeño, con un evento y un personaje que funcionaba bastante bien.
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</section>
+
+<!--También añadí en el footer mi nombre y el Copyright, utilizando un span porque una parte del texto (©) es un enlace y el resto del texto no lo es, pero quiero que esté en la misma línea.-->
+
+<footer class="wrapper">
+	<a href="https://copyright.es/"> © </a><span>Juan José Bonnín Sansó 2019 - 2020</span> 
+</footer>
+
+
+</body>

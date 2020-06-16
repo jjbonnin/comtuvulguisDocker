@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<link href="css\mystyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!--He puesto una imagen oscura como fondo y en CSS, he creado una clase llamada .wrapper para añadirla a los elementos contenedores y poder centrarlos más fácilmente. En el header he creado un contenedor donde hay otros dos, el logo y el subtitle, y otro más, que contiene los elementos del nav, cada uno lleva a un lugar de la misma página utilizando IDs.-->
+
+<body background="imatges/fondo.jpg">
+<header class="wrapper">
+	<div class="wrapper">
+		<div class="logo">
+			JJB
+		</div>
+		<div class="subtitle">
+			Juan José Bonnín
+		</div>
+		<nav>
+			<a href="about.html">About</a>
+			<a href="experience.html">Experience</a>
+			<a href="work.html">Work</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</div>
+</header>
+
+
+<!--He creado dos sections, el primero contiene el texto About, una de las partes del nav, y un contenedor que he llamado nav porque quería que tuviese las mismas propiedades que este. Dentro de este "nav" hay tres iconos de redes sociales y cada uno lleva a un perfil de la respectiva red social.
+El segundo section contiene dos elementos, una foto de mi cara simplemente y un contenedor donde hay dos contenedores más: un contenedor con un título del texto y otro texto de información y un nuevo contenedor con cuatro iconos que representan habilidades personales.-->
+<!--Tanto los iconos de redes sociales como los de habilidades personales tienen su propia clase para diferenciar su comportamiento.-->
+
+	<section class="wrapper seccion">
+		<div class="wrapper tituloseccion" >
+			About
+		</div>
+		<nav id="icons" class="wrapper">
+			<a href="https://twitter.com/jbonnins"><img class="icon" src="imatges/twitter.png" alt="Twitter" title="Twitter"></a>
+			<a href="https://www.instagram.com/jbonnins/?hl=es"><img class="icon" src="imatges/instagram.png" alt="Instagram" title="Instagram"></a>
+			<a href="https://www.pinterest.es/jbonnnsans/"><img class="icon" src="imatges/pinterest.png" alt="Pinterest" title="Pinterest"></a>
+		</nav>
+	</section>
+
+	<section class="wrapper">
+		<div class="imgcentro">
+			<img id="cara" src="imatges/jjb_svga.png" alt="cara">
+		</div>
+		<div>
+			<div id="content">
+				<div class="cabecera">
+				Mi nombre es Iván Avilés
+				</div>
+				<div id="info">
+				En un futuro me gustaría dedicarme a algo relacionado con la informática ya que es de las pocas cosas que se me da ien y me gustan a la vez, aunque mi mayor sueño sería trabajar con videojuegos porque siempre he tenido ese "instinto" creativo y me gustaría dedicarmea ello ya que no es sólo programar (cosa que en realidad disfruto) sino que también es pensar ideas, historias, mecánicas, personajes y sus personalidades o apariencias, en definitiva es como crear un nuevo mundo donde puedes elegir qué es lo que pasa.
+
+				</div>
+			</div>
+			<div id="skills">
+				<img class="skill" src="imatges/programador.svg" alt="Programador" title="Programador">
+				<img class="skill" src="imatges/pintor.svg" alt="Pintor" title="Pintor">
+				<img class="skill" src="imatges/gamer.svg" alt="Gamer" title="Gamer">
+				<img class="skill" src="imatges/escritor.svg" alt="Escritor" title="Escritor">
+			</div>
+		</div>
+	</section>
+
+<!--También añadí en el footer mi nombre y el Copyright, utilizando un span porque una parte del texto (©) es un enlace y el resto del texto no lo es, pero quiero que esté en la misma línea.-->
+
+<footer class="wrapper">
+	<a href="https://copyright.es/"> © </a><span>Juan José Bonnín Sansó 2019 - 2020</span> 
+</footer>
+
+
+</body>

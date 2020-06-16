@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Work</title>
+	<link href="css\mystyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<!--He puesto una imagen oscura como fondo y en CSS, he creado una clase llamada .wrapper para añadirla a los elementos contenedores y poder centrarlos más fácilmente. En el header he creado un contenedor donde hay otros dos, el logo y el subtitle, y otro más, que contiene los elementos del nav, cada uno lleva a una página diferente localizada en la misma carpeta.-->
+
+<body background="imatges/fondo.jpg">
+<header class="wrapper">
+	<div class="wrapper">
+		<div class="logo">
+			JJB
+		</div>
+		<div class="subtitle">
+			Juan José Bonnín
+		</div>
+		<nav>
+			<a href="about.html">About</a>
+			<a href="experience.html">Experience</a>
+			<a href="work.html">Work</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</div>
+</header>
+
+<!--Esta es la parte de trabajo.-->
+<!--He utilizado la clase wrapper para ayudarme a centrar mejor los elementos.-->
+
+	<section class="wrapper seccion" >
+		<div class="wrapper tituloseccion">
+			Trabajo
+		</div>
+	</section>
+
+<!--He creado una tabla de dos filas y tres columnas para inserter 6 elementos diferentes (inventados) con un elemento icono y con otro elemento de texto, utilizando una clase difernte para cada cosa para poder hacer la web responsive posteriormente.-->
+
+	<section class="wrapper">
+		<div class="wrapper">
+			<table class="wrapper">
+			<tr>
+				<td>
+					<div class="wrapper">
+						<div class="imgcentro">
+							<img class="works worklogo" src="imatges/titulo.svg">
+						</div>
+						<div class="trabajos">
+							Título grado superior de Administración de Sistemas Informáticos en Red.
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="wrapper">
+						<div class="imgcentro">
+							<img class="works worklogo" src="imatges/computadora.svg">
+						</div>
+						<div class="trabajos">
+							Mantenimiento y conocimiento avanzado de computadoras.
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="wrapper">
+						<div class="imgcentro">
+							<img class="works worklogo" src="imatges/codificacion.svg">
+						</div>
+						<div class="trabajos">
+							Programación avanzada html, Python, XML...
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="wrapper">
+						<div class="imgcentro">
+							<img class="works worklogo" src="imatges/solicitud.svg">
+						</div>
+						<div class="trabajos">
+							Programación y creación de páginas web. 
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="wrapper">
+						<div class="imgcentro">
+							<img class="works worklogo" src="imatges/smartphone.svg">
+						</div>
+						<div class="trabajos">
+							Adaptación de páginas web a múltiples dispositivos.
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="wrapper">
+						<div class="imgcentro">
+							<img class="works worklogo" src="imatges/bloquear.svg">
+						</div>
+						<div class="trabajos">
+							Experto en seguridad informática.
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</section>
+
+<!--También añadí en el footer mi nombre y el Copyright, utilizando un span porque una parte del texto (©) es un enlace y el resto del texto no lo es, pero quiero que esté en la misma línea.-->
+
+<footer class="wrapper">
+	<a href="https://copyright.es/"> © </a><span>Juan José Bonnín Sansó 2019 - 2020</span> 
+</footer>
+
+</body>
